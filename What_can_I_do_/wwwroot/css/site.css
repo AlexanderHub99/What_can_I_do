@@ -69,3 +69,29 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+    .menu div {
+        border-top: 1px solid lightgray;
+        border-right: 1px solid lightgray;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // добавляете в див иконку и текст, все само встанет как надо
+    }
+
+        .menu div:nth-child(-n+3) {
+            border-top: 0;
+        }
+
+        .menu div:nth-child(3n) {
+            border-right: 0;
+        }
+.fon {
+    background-image: url(../img/white-background-with-abstract-dots-pattern_132230-117.jpg);
+}

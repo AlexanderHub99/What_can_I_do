@@ -23,9 +23,11 @@ namespace What_can_I_do_.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult SimpleTasks(string pIN)
         {
-            return View();
+            string v = CheckPIN.ValidatePin(pIN);
+
+            return View(v);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
