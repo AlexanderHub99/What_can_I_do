@@ -1,17 +1,20 @@
-﻿@using What_can_I_do_.Models
-@model IEnumerable<CheckPIN>
+﻿
 @{
     ViewData["Title"] = "Simple tasks";
 }
 
-<div method="post">
-    <h1>
 
-        <input type="text" name="pIN" value="" />
-        <input type="submit" value="Submit" class="submit" />
-        
-    </h1>
-    
+<div class="divCheckPIN">
+
+
+    <form>
+        <label for="fname">Eeter pin code</label>
+        <input class="inputCheckPIN" type="password" id="fname" name="pIN" value="">@ViewBag.Message<Br>
+        <input type="submit">
+    </form>
+
 </div>
+
+
 
 

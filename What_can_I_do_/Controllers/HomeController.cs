@@ -22,12 +22,17 @@ namespace What_can_I_do_.Controllers
         {
             return View();
         }
-
-        public IActionResult SimpleTasks(string pIN)
+        
+        public IActionResult SimpleTasks(string pIN  )
         {
-            string v = CheckPIN.ValidatePin(pIN);
+            ViewBag.pIN = pIN;
+            ViewBag.Message = CheckPIN.ValidatePin(pIN);
 
-            return View(v);
+            return View();
+        }
+        public IActionResult MyToDoList()
+        {
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

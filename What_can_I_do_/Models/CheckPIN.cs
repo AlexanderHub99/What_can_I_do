@@ -2,15 +2,25 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+ 
+using Microsoft.EntityFrameworkCore;
 
 namespace What_can_I_do_.Models
 {
     public class CheckPIN 
     {
+        
 
 
         public static string ValidatePin(string _CheckPIN )
         {
+            
+            string result = null;
+            if (_CheckPIN == null)
+            {
+                result = "";
+                return result;
+            }
 
             if (_CheckPIN != null)
             {
@@ -18,16 +28,26 @@ namespace What_can_I_do_.Models
                 {
                     if (_CheckPIN.All(c => c >= '0' && c <= '9'))
                     {
-                        return "pin code is correct";
+
+                        result = "pin code is correct";
+                        return result;
                     }
                     else
-                        return "PIN is incorrect";
+                        result = "PIN is incorrect";
+                    return result;
                 }
                 else
-                    return "PIN is incorrect";
+                    result = "PIN is incorrect";
+                return result;
             }
             else
-                return "PIN is incorrect";
+                result = "PIN is incorrect";
+            return result;
+        }
+
+        public class MovieDBContext : DbContext
+        {
+            public DbSet<CheckPIN> Movies { get; set; }
         }
 
 
