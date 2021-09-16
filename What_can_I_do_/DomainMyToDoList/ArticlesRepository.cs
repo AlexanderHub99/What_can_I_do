@@ -9,7 +9,7 @@ namespace What_can_I_do_.DomainMyToDoList
     public class ArticlesRepository
     {
         //класс-репозиторий напрямую обращается к контексту базы данных
-        private readonly AppDbContext context;
+       /* private readonly AppDbContext context;
         public ArticlesRepository(AppDbContext context)
         {
             this.context = context;
@@ -44,6 +44,6 @@ namespace What_can_I_do_.DomainMyToDoList
         {
             context.Tasks.Remove(entity);
             context.SaveChanges();
-        }
+        }*/
     }
 }

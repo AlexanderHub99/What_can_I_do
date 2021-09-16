@@ -3,10 +3,8 @@
     "",
     "\\What_can_I_do_",
     "\\What_can_I_do_\\Controllers",
-    "\\What_can_I_do_\\Models",
-    "\\What_can_I_do_\\wwwroot",
     "\\What_can_I_do_\\wwwroot\\css"
   ],
-  "SelectedNode": "\\What_can_I_do_\\Models\\CheckPIN.cs",
+  "SelectedNode": "\\What_can_I_do_\\Controllers\\HomeController.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -120,3 +120,152 @@ body {
     background-color: #f2f2f2;
     padding: 20px;
 }
+
+.containerre body {
+    background: #fff;
+    color: black;
+    font-family: sans-serif;
+}
+
+.containerre {
+    display: block;
+    width: 600px;
+    margin: 100px auto 0;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px 16px 30px;
+}
+
+    .containerre ul {
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    .containerre li * {
+        float: left;
+    }
+
+    .containerre li, h3 {
+        clear: both;
+        list-style: none;
+    }
+
+    .containerre input, button {
+        outline: none;
+    }
+
+    .containerre button {
+        background: none;
+        border: 0px;
+        color: #888;
+        font-size: 15px;
+        font-family: sans-serif;
+        cursor: pointer;
+        float: right;
+        margin: 8px auto;
+    }
+
+        .containerre button:hover {
+            color: black;
+        }
+
+    .containerre #add:hover {
+        border-radius: 14px;
+        border: 1px solid #ddd;
+    }
+
+    .containerre #add {
+        float: right;
+        padding: 10px;
+        margin-top: 0;
+        border: 1px solid #ffffff;
+    }
+
+    .containerre h3 {
+        color: black;
+        font-weight: bold;
+        font-size: 15px;
+        border-bottom: 2px solid black;
+        padding: 10px 0;
+        margin: 0 0 10px;
+        text-transform: uppercase;
+    }
+
+    .containerre input[type="text"] {
+        margin: 1px 0;
+        font-size: 18px;
+        line-height: 18px;
+        height: 18px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        background: #fff;
+        border-radius: 6px;
+        font-family: sans-serif;
+        color: #888;
+    }
+
+        .containerre input[type="text"]:focus {
+            color: black;
+        }
+
+    .containerre label[for='new-task'] {
+        display: block;
+        margin: 0 0 20px;
+    }
+
+    .containerre input#new-task {
+        float: left;
+        width: 487px;
+    }
+
+    .containerre p > button:hover {
+        color: #0FC57C;
+    }
+
+    .containerre li {
+        overflow: hidden;
+        border-bottom: 1px solid #eee;
+    }
+
+        .containerre li > input[type="checkbox"] {
+            margin: 0 10px;
+            position: relative;
+            top: 15px;
+            transform: scale(1.5);
+        }
+
+        .containerre li > label {
+            font-size: 18px;
+            line-height: 40px;
+            width: 237px;
+            padding: 1px 0 0 11px
+        }
+
+        .containerre li > input[type="text"] {
+            width: 457px;
+        }
+
+        .containerre li > .delete:hover {
+            color: #CF2323;
+        }
+
+    .containerre #finished-tasks label, #finished-tasks button {
+        text-decoration: line-through;
+        color: lightgray;
+    }
+
+    .containerre ul li input[type=text] {
+        display: none;
+    }
+
+    .containerre ul li.editMode input[type=text] {
+        display: block;
+    }
+
+    .containerre ul li.editMode label {
+        display: none;
+    }
+
+    .containerre button.checkbox {
+        float: left;
+    }

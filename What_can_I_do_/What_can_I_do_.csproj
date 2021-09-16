@@ -5,11 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Views\Home\MyToDoList.cshtml" />
+    <Content Remove="Views\Home\1MyToDoList.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Views\Home\MyToDoList.cshtml" />
+    <None Include="Views\Home\1MyToDoList.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

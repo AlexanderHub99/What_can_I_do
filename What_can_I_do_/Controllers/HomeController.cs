@@ -14,8 +14,8 @@ namespace What_can_I_do_.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly ArticlesRepository articlesRepository;
-        public HomeController(ILogger<HomeController> logger, ArticlesRepository articlesRepository)
+        //private readonly ArticlesRepository articlesRepository;
+        public HomeController(ILogger<HomeController> logger) /*ArticlesRepository articlesRepository*/ 
         {
             _logger = logger;
            // this.articlesRepository = articlesRepository;
