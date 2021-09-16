@@ -1,13 +1,13 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using What_can_I_do_.DomainMyToDoList;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+
 
 namespace What_can_I_do_
 {
@@ -23,6 +23,13 @@ namespace What_can_I_do_
         // Этот метод вызывается средой выполнения. Используйте этот метод для добавления служб в контейнер.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllersWithViews();
+           
+            // получаем строку подключения из файла конфигурации
+            string connection = Configuration.GetConnectionString("DefaultConnection");
+            // добавляем контекст AppDbContext в качестве сервиса в приложение
+            services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlServer(connection));
             services.AddControllersWithViews();
         }
 
