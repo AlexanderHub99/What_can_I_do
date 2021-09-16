@@ -5,17 +5,20 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using What_can_I_do_.DomainMyToDoList;
 using What_can_I_do_.Models;
+
 
 namespace What_can_I_do_.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly ArticlesRepository articlesRepository;
+        public HomeController(ILogger<HomeController> logger, ArticlesRepository articlesRepository)
         {
             _logger = logger;
+           // this.articlesRepository = articlesRepository;
         }
 
         public IActionResult Index()
@@ -30,6 +33,7 @@ namespace What_can_I_do_.Controllers
 
             return View();
         }
+       
         public IActionResult MyToDoList()
         {
             return View();

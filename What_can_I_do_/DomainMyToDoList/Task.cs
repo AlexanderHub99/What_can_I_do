@@ -8,7 +8,7 @@ namespace What_can_I_do_.DomainMyToDoList
     public class Task
     {
         public Guid id { get; set; }
-        public string _Task { get; set; }
+        public string TTask { get; set; }
         public bool performance { get; set; }
     }
 }

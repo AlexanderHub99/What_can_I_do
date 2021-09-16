@@ -42,7 +42,6 @@ C:\Users\Rim\Source\Repos\What_can_I_do\What_can_I_do_\bin\Debug\net5.0\Microsof
 C:\Users\Rim\Source\Repos\What_can_I_do\What_can_I_do_\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\Rim\Source\Repos\What_can_I_do\What_can_I_do_\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Rim\Source\Repos\What_can_I_do\What_can_I_do_\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Rim\Source\Repos\What_can_I_do\What_can_I_do_\obj\Debug\net5.0\Razor\Views\Home\MyToDoList.cshtml.g.cs
 C:\Users\Rim\Source\Repos\What_can_I_do\What_can_I_do_\bin\Debug\net5.0\libman.json
 C:\Users\Rim\Source\Repos\What_can_I_do\What_can_I_do_\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\Rim\Source\Repos\What_can_I_do\What_can_I_do_\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll

@@ -10,7 +10,7 @@ using What_can_I_do_.DomainMyToDoList;
 namespace What_can_I_do_.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20210916111626__initial")]
+    [Migration("20210916151004__initial")]
     partial class _initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -223,7 +223,7 @@ namespace What_can_I_do_.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("_Task")
+                    b.Property<string>("TTask")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("performance")
@@ -237,7 +237,7 @@ namespace What_can_I_do_.Migrations
                         new
                         {
                             id = new Guid("716c2e99-6f6c-4472-81a5-43c56e11637c"),
-                            _Task = "Новый спутник запущен на орбиту",
+                            TTask = "Новый спутник запущен на орбиту",
                             performance = false
                         });
                 });

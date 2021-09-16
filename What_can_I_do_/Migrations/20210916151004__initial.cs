@@ -51,7 +51,7 @@ namespace What_can_I_do_.Migrations
                 columns: table => new
                 {
                     id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    _Task = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    TTask = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     performance = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
@@ -167,7 +167,7 @@ namespace What_can_I_do_.Migrations
 
             migrationBuilder.InsertData(
                 table: "Tasks",
-                columns: new[] { "id", "_Task", "performance" },
+                columns: new[] { "id", "TTask", "performance" },
                 values: new object[] { new Guid("716c2e99-6f6c-4472-81a5-43c56e11637c"), "Новый спутник запущен на орбиту", false });
 
             migrationBuilder.CreateIndex(

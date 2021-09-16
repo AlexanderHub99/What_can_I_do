@@ -24,7 +24,7 @@ namespace What_can_I_do_
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-           
+            services.AddTransient<ArticlesRepository>();
             // получаем строку подключения из файла конфигурации
             string connection = Configuration.GetConnectionString("DefaultConnection");
             // добавляем контекст AppDbContext в качестве сервиса в приложение
